@@ -28,7 +28,6 @@ function agregar(container,tarea)
 	label.appendChild(icono);
 	container.appendChild(div);	
 	//eventos addlistener
-	
 }
 function eliminar()
 {
@@ -41,6 +40,7 @@ function añadirTareas()
 	if(tarea !=""){
 		agregar(listaTareas,tarea);
 	}
+	tarea = document.getElementById("tarea").value="";
 }
 
 /* function chequearTarea()
