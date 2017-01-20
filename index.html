@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,38 +11,38 @@
 </head>
 <body>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-<!--SECCION DEL HEADER-->
-<div class="header">
-	<div class="container">
-		<div class="row text-center">
-			<h4>TODO APP</h4>
+	<!--SECCION DEL HEADER-->
+	<div class="header">
+		<div class="container">
+			<div class="row text-center">
+				<h4>TODO APP</h4>
+			</div>
 		</div>
 	</div>
-</div>
-<!--FIN SECCION DEL HEADER-->
-<!--SECCION PARA AGREGAR UNA NUEVA TAREA-->
-<div class="agregar">
-	<div class="container">
-		<div class="row">
-			<textarea class="form-control" rows="10"  placeholder="Añade tu nueva tarea"></textarea>
-			<button class="btn"><i class="fa fa-plus" aria-hidden="true"></i> Añadir tarea
-			</button>
+	<!--FIN SECCION DEL HEADER-->
+	<!--SECCION PARA AGREGAR UNA NUEVA TAREA-->
+	<div class="agregar">
+		<div class="container">
+			<div class="row">
+				<textarea class="form-control" rows="10"  placeholder="Añade tu nueva tarea" id="tarea"	></textarea>
+				<button class="btn  btn-primary  submit-btn" id="add" onClick="añadirTareas()"  type="submit"><i class="fa fa-plus" aria-hidden="true"></i> Añadir tarea
+				</button>
+				<button class="btn  btn-primary  submit-btn" id="add" onClick="eliminar()"  type="submit"><i class="fa fa-plus" aria-hidden="true"></i> borrar tarea
+				</button>
+			</div>
 		</div>
 	</div>
-</div>
-<!--FIN SECCION PARA AGREGAR UNA NUEVA TAREA-->
-<div class="tareas">
-	<div class="container x">
-		<div class="row checkbox">
-			  <label>
-			    <input type="checkbox" value="">
-			       Esta es una opción muy interesante que tienes que pinchar
-			  </label>
-			  <a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-			  
-			  
+	<!--FIN SECCION PARA AGREGAR UNA NUEVA TAREA-->
+	<div class="tareas">
+		<div class="container " >
+			<div class="row checkbox" id="listaTareas" >
+			<!-- aqui se listan las tareas -->		
+			</div>
 		</div>
 	</div>
-</div>
+	<!--Java Script-->
+	<script type='text/javascript' src='js/main.js'></script>
 </body>
 </html>
+
+  <!--<a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>-->
