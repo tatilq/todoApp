@@ -3,4 +3,4 @@
 textarea{width: 100%; color: black;}
 .btn{ margin-top: 10px; color: white; background-color:#4178AB;}
 .agregar{ margin: 10px;}
-span{margin-bottom: 2px;}
+#list{margin-bottom: 5px; background-color:#E7E4E5; padding: 10px 10px;}
