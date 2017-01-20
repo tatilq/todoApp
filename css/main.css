@@ -1,0 +1,20 @@
+/**/
+.header
+{
+	background-color:#E7E4E5;
+}
+textarea
+{
+	width: 100%;
+	color: black;
+}
+.btn
+{
+	margin-top: 10px;
+	color: white;
+	background-color:#4178AB;
+}
+.agregar
+{
+	margin: 10px;
+}
