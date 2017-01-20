@@ -19,6 +19,7 @@ function agregar(container,tarea)
 	var checkbox=document.createElement('input');
 	checkbox.type = "checkbox";
 	checkbox.id="idchk";
+	//chkId.addEventListener('click', eliminar); 
 
 	//Insercion de los Nodos 
 	div.appendChild(label);
@@ -27,7 +28,7 @@ function agregar(container,tarea)
 	label.appendChild(icono);
 	container.appendChild(div);	
 	//eventos addlistener
-	//chkId.addEventListener('click', eliminar(), false); 
+	
 }
 function eliminar()
 {
@@ -42,10 +43,12 @@ function añadirTareas()
 	}
 }
 
-/*
-if (idchk.checked==true) 
+/* function chequearTarea()
 {
-	idLbl.setAttribute("style","text-decoration:line-through;");
+	if (idhk.checked==true) 
+	{
+		idLbl.setAttribute("style","text-decoration:line-through;");
+	}
 }
 //
 */
