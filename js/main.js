@@ -1,60 +1,38 @@
-//icoId.addEventListener("click", eliminar, false); 
-
-function agregar(container,tarea)
+function crearNodos(container,tarea)
 {
-	//Creacion de un Nodo div con clase checkbox
 	var div=document.createElement('div');
-	//div.id="idDiv"+listaTareas.children.length;
 	div.className="checkbox , list";
-
-	//Creacion de un nodo iono
 	var icono=document.createElement('i');
 	icono.className="fa fa-trash-o icono";
-	//icono.id="idIco"+listaTareas.children.length;
-	
-	//Creacion de un Nodo label
 	var label=document.createElement('label');
-	//label.id="idLbl"+listaTareas.children.length
-	//Creacion de un Nodo checkbox
 	var checkbox=document.createElement('input');
 	checkbox.type = "checkbox";
-	checkbox.id="idchk"+listaTareas.children.length;
-	
-	//Insercion de los Nodos 
 	div.appendChild(label);
 	label.appendChild(checkbox);
 	label.appendChild(document.createTextNode(tarea));
-	label.appendChild(icono);
-	container.appendChild(div);	
-	//eventos addlistener
-	icono.addEventListener('click', eliminar); 
-	//checkbox.addEventListener('click', chequearTarea); 
+	label.appendChild(icono), container.appendChild(div);	
+	icono.addEventListener('click', eliminarNodos); 
+	checkbox.addEventListener("click", chequear)
 }
-function eliminar(evt)
-{
-
-	//console.log(listaTareas.target);
-	//console.log(evt.target.parentNode);
-	evt.target.parentNode.parentNode.parentNode.removeChild(evt.target.parentNode.parentNode);
-  //var x = event.target.tagName;
-}
-function añadirTareas()
+function aniadirTareas()
 {
 	var tarea = document.getElementById("tarea").value;
 	if(tarea !=""){
-		agregar(listaTareas,tarea);
+		crearNodos(listaTareas,tarea);
 	}
 	tarea = document.getElementById("tarea").value="";
+	tarea.focus();
 }
-
-function chequearTarea(evt)
+function eliminarNodos(evt)
 {
-	console.log(evt.target.parentNode);
-
-	/*if (idhk.checked==true) 
-		{
-			idLbl.setAttribute("style","text-decoration:line-through;");
-		}
-	}
-	*/
+	var hijo=evt.target.parentNode.parentNode
+	hijo.parentNode.removeChild(hijo);
+}
+function chequear(evt)
+{
+	var check=evt.target.parentNode;
+	if(evt.target.checked)
+		check.setAttribute("style","text-decoration:line-through;");
+	else
+		check.setAttribute("style","text-decoration:none;");
 }
