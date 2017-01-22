@@ -18,7 +18,7 @@ function aniadirTareas()
 {
 	var tarea = document.getElementById("tarea");
 	if(tarea.value.length == 0 || /^\s*$/.test(tarea.value)){
-		alert("GGG");
+		alert("Debes ingresar una tarea");
 	}
 	else
 	{
