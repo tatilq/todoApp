@@ -16,17 +16,21 @@ function crearNodos(container,tarea)
 }
 function aniadirTareas()
 {
-	var tarea = document.getElementById("tarea").value;
-	if(tarea !=""){
-		crearNodos(listaTareas,tarea);
+	var tarea = document.getElementById("tarea");
+	if(tarea.value.length == 0 || /^\s*$/.test(tarea.value)){
+		alert("GGG");
+	}
+	else
+	{
+		crearNodos(listaTareas,tarea.value);
 	}
 	tarea = document.getElementById("tarea").value="";
-	tarea.focus();
 }
 function eliminarNodos(evt)
 {
 	var hijo=evt.target.parentNode.parentNode
 	hijo.parentNode.removeChild(hijo);
+	//console.log(listaTareas.children);
 }
 function chequear(evt)
 {
