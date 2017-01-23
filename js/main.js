@@ -1,6 +1,6 @@
 var listaTareas = document.getElementById("listaTareas");
 function crearNodos(container,tarea)
-{
+{    
 	//style="width:100px; height:115px; overflow: scroll;"
 	var div=document.createElement('div');
 	div.className="list , checkbox , option animated zoomInDown";
@@ -25,7 +25,7 @@ function aniadirTareas()
 		alert("Debes ingresar una tarea");
 	else
 		crearNodos(listaTareas,tarea.value);
-
+               
 	tarea.focus();
 	tarea.value="";
 

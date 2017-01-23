@@ -4,7 +4,9 @@
 textarea{width: 100%; color: black; }
 .btn{ margin-top: 10px; color: white; background-color:#4178AB;}
 .agregar{ margin: 10px;}
-.list{margin-bottom: 5px; background-color:#E7E4E5; padding: 10px 10px;}
-label{width:95%}
+.list{margin-bottom: 5px; background-color:#E7E4E5; padding: 10px 10px; }
+label{width:95%  }
+.list:hover{background-color:rgba(37,159,153,0.5);}
 i:hover{ font-size: 20px;}
 .icono{font-size: 20px; position: absolute;  right: 10px; top: 14px;}
+ss
