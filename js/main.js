@@ -1,4 +1,5 @@
 var listaTareas = document.getElementById("listaTareas");
+
 function crearNodos(container,tarea)
 {
 	//style="width:100px; height:115px; overflow: scroll;"
@@ -31,9 +32,10 @@ function aniadirTareas()
 }
 function eliminarNodos(evt)
 {
-	evt.target.parentNode.className= "list , checkbox , animated zoomOutDown"; 
+	evt.target.parentNode.className= "list , checkbox , option animated zoomOutDown"; 
   	setTimeout(function(){
-    listaTareas.removeChild(evt.target.parentNode);  
+    listaTareas.removeChild(evt.target.parentNode);
+    
   	}, 1000);   
 }
 function chequear(evt)
