@@ -6,6 +6,7 @@ textarea{width: 100%;}
 .agregar{ margin: 10px;}
 .list{margin: 5px;  background-color:#E7E4E5; padding: 10px 10px; border-style:outset;}
 label{width:95%  }
+#list{ height: 300px; overflow: auto; }
 .list:hover{background-color:rgba(37,159,153,0.5);}
 i:hover{ font-size: 20px;}
 .icono{font-size: 20px; position: absolute;  right: 10px; top: 14px;}
