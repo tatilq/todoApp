@@ -26,19 +26,21 @@
 		<div class="container">
 			<div class="row">
 				<textarea class="form-control" rows="5"  placeholder="Añade tu nueva tarea" id="tarea"	></textarea>
-				<button class="btn  btn-primary  submit-btn" id="add" onClick="aniadirTareas()"  type="submit"><i class="fa fa-plus" aria-hidden="true"></i> Añadir tarea
+				<button class="btn  btn-primary  submit-btn" id="add" onclick="aniadirTareas()"  type="submit"><i class="fa fa-plus" aria-hidden="true"></i> Añadir tarea
 				</button>
 			</div>
 		</div>
 	</div>
 	<!--FIN SECCION PARA AGREGAR UNA NUEVA TAREA-->
-	<div class="tareas">
+	<!--SECCION PARA ENLISTAR LAS TAREAS-->
+	<div class="tareas" >
 		<div class="container " >
-			<div class="row " id="listaTareas"  >
-				<!-- aqui se listan las tareas -->
+			<div class="row " id="listaTareas">
+			<!-- aqui se listan las tareas -->
 			</div>
 		</div>
 	</div>
+	<!--FIN DE SECCION PARA ENLISTAR LAS TAREAS-->
 	<!--Java Script-->
 	<script type='text/javascript' src='js/main.js'></script>
 </body>
